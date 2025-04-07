@@ -29,3 +29,6 @@ Copy and paste this code to these files.
 ```shell
 clasp push
 ```
+6. Click "Deploy" button and show menus.
+7. Click "Test Deployments" in menus.
+8. Click "Install".
