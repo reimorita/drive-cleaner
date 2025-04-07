@@ -21,7 +21,11 @@ clasp login
 ```shell
 clasp create --title "<Project Name>" --type standalone
 ```
-3. Push this code.
+3. Update GAS project setting.
+Check [Project Setting]-[Show "appsscript.json" manifest file in editor].
+4. Create code.js and edit appscript.json.
+Copy and paste this code to these files.
+5. Push this code.
 ```shell
 clasp push
 ```
