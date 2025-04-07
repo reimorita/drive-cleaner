@@ -1,0 +1,40 @@
+{
+    "timeZone": "Asia/Tokyo",
+    "dependencies": {
+      "enabledAdvancedServices": [
+        {
+          "userSymbol": "Drive",
+          "version": "v2",
+          "serviceId": "drive"
+        }
+      ]
+    },
+    "exceptionLogging": "STACKDRIVER",
+    "oauthScopes": [
+      "https://www.googleapis.com/auth/drive.addons.metadata.readonly",
+      "https://www.googleapis.com/auth/script.locale",
+      "https://www.googleapis.com/auth/drive",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ],
+    "runtimeVersion": "V8",
+    "addOns": {
+      "common": {
+        "name": "DriveCleaner",
+        "logoUrl": "https://storage.googleapis.com/untitled-cleaner/untitled-cleaner.png",
+        "useLocaleFromApp": true,
+        "homepageTrigger": {
+          "runFunction": "noticeOnlyDrive",
+          "enabled": true
+        },
+        "layoutProperties": {
+          "primaryColor": "#4169e1",
+          "secondaryColor": "#4169e1"
+        }
+      },
+      "drive": {
+        "homepageTrigger": {
+          "runFunction": "buildHomepage"
+        }
+      }
+    }
+  }
