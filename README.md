@@ -1,34 +1,35 @@
 # Drive Cleaner
-## Overview 
-This is a Google Workspace add-on that allows you to delete unnecessary files on Google Drive in bulk.
+## 概要 
+Google ドライブ上の不要なファイルを一括削除する Google Workspace アドオン
 
-## How to work
-### Manual Process
-1. Go to GAS Console. (https://script.google.com/)
-2. Create GAS Project.
-3. Create code.js and appscript.json.
-4. Copy this code to (3).
-5. Click "Deploy" button and show menus.
-6. Click "Test Deployments" in menus. 
-7. Click "Install".
+## 動作方法
+### 手動動作
+1. GASのコンソール画面に遷移する (https://script.google.com/)
+2. GASプロジェクトを作成する
+3. code.js と appscript.json を作成する
+4. 本コードを(3)にコピペする
+5. GASコンソールから「デプロイ」ボタンをクリックし、メニューを表示する
+6. 「デプロイをテスト」をクリックする 
+7. 「インストール」をクリックする
 
-### Deploy by using the `clasp` command-line tool
-1. Log in with the Google account user that runs GAS.
+###  `clasp` を利用した操作
+※claspのインストール方法は割愛する。
+
+1. GitHubから本コードをpullする
+2. このアドオンツールを動作するGoogleアカウントでログインする
 ```shell
 clasp login
 ```
-2. Create a new GAS project.
+3. claspのcreateコマンドを使って,GASアプリケーションを作成する
 ```shell
 clasp create --title "<Project Name>" --type standalone
 ```
-3. Update GAS project setting.
-Check [Project Setting]-[Show "appsscript.json" manifest file in editor].
-4. Create code.js and edit appscript.json.
-Copy and paste this code to these files.
-5. Push this code.
+4. GASアプリケーションの設定ファイルを編集する
+[プロジェクト設定]-[appsscript.json」マニフェスト ファイルをエディタで表示する]をチェックする
+5. claspのpushコマンドでコードをpushする
 ```shell
 clasp push
 ```
-6. Click "Deploy" button and show menus.
-7. Click "Test Deployments" in menus.
-8. Click "Install".
+6. GASコンソールから「デプロイ」ボタンをクリックし、メニューを表示する
+7. 「デプロイをテスト」をクリックする 
+8. 「インストール」をクリックする
